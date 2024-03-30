@@ -1,0 +1,8 @@
+
+/.vs
+*.dll
+/GUI/obj
+/obj
+/Domain/obj
+/Domain/bin
+/GUI/bin

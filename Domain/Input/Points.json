@@ -1,0 +1,40 @@
+﻿{
+  "bins": [
+    {
+      "id": 1,
+      "name": "Point A",
+      "latitude": 37.982972,
+      "longtitude": 23.729032
+    },
+    {
+      "id": 2,
+      "name": "Point B",
+      "latitude": 37.982786,
+      "longtitude": 23.727436
+    },
+    {
+      "id": 3,
+      "name": "Point C",
+      "latitude": 37.982090,
+      "longtitude": 23.726829
+    },
+    {
+      "id": 4,
+      "name": "Point D",
+      "latitude": 37.981395,
+      "longtitude": 23.728723
+    },
+    {
+      "id": 5,
+      "name": "Point E",
+      "latitude": 37.980881,
+      "longtitude": 23.728082
+    },
+    {
+      "id": 6,
+      "name": "Point F",
+      "latitude": 37.981271,
+      "longtitude": 23.727340
+    }
+  ]
+}
