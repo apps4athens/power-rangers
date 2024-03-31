@@ -1,4 +1,6 @@
-﻿namespace Domain
+﻿using Integration.Google;
+
+namespace Domain
 {
     public class Bin
     {
@@ -18,6 +20,15 @@
         public void Reset()
         {
             SetMetrics(0, 0);
+        }
+
+        public PointOnMap ToPointOnMap()
+        {
+            return new PointOnMap()
+            {
+                Latitude = Latitude,
+                Longtitude = Longtitude
+            };
         }
 
 

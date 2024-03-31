@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GUI", "GUI\GUI.csproj", "{DDB36C67-3E97-46A6-B21C-5938E96209E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{FB10CC9F-CE54-4D30-B011-3A30F036398D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{FB10CC9F-CE54-4D30-B011-3A30F036398D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Google", "Integration.Google\Integration.Google.csproj", "{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FB10CC9F-CE54-4D30-B011-3A30F036398D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB10CC9F-CE54-4D30-B011-3A30F036398D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB10CC9F-CE54-4D30-B011-3A30F036398D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

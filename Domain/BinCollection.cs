@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 using Domain.Input;
+using Integration.Google;
 
 namespace Domain
 {
@@ -8,6 +9,9 @@ namespace Domain
     {
         [JsonPropertyName("bins")]
         public List<Bin> BinList { get; set; } = new();
+
+        private List<Bin> _binListToPickUP;
+        private GoogleCLient _googleCLient = new();
 
         public BinCollection()
         {
@@ -50,8 +54,19 @@ namespace Domain
                 if (bin.ShouldPickUp())
                     result.Add(bin);
             }
+            _binListToPickUP = result;
             return result;
         }
 
+
+        public async Task<DirectionsResponse> GetDirectionsToBins()
+        {
+            var points = new List<PointOnMap>();
+            foreach (var bin in _binListToPickUP)
+            {
+                points.Add(bin.ToPointOnMap());
+            }
+            return await _googleCLient.GetDirectionsAsync(points);
+        }
     }
 }

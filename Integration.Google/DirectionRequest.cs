@@ -24,5 +24,21 @@
         public List<PointOnMap> Waypoints { get; set; } = new();
         public bool OptimizeWayPoints = false;
         public string TravelMode = "DRIVING";
+
+        public DirectionRequest(List<PointOnMap> pointsOnMap)
+        {
+            var origin = pointsOnMap.FirstOrDefault();
+            if (origin == null)
+            {
+                return;
+            }
+            Origin = origin;
+            Destination = pointsOnMap.LastOrDefault();
+            for (int i = 1; i < pointsOnMap.Count - 1; i++)
+            {
+                Waypoints.Add(pointsOnMap[i]);
+            }
+        }
     }
+
 }

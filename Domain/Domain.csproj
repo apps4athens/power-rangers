@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Integration.Google\Integration.Google.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Input\MetricsInput.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
