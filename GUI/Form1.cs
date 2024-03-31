@@ -79,6 +79,7 @@ namespace GUI
 
             txtresult.Visible = true;
             txtHint.Visible = true;
+            pictureBox1.Visible = true;
             var web = new WebBrowser();
             web.Navigate(new Uri("http://www.google.com"));
         }

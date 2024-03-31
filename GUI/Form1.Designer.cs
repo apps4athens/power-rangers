@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblA = new Label();
             txtWeightA = new TextBox();
             txtweightC = new TextBox();
@@ -55,8 +56,10 @@ namespace GUI
             txtvolumeE = new TextBox();
             txtvolumeF = new TextBox();
             label5 = new Label();
+            pictureBox1 = new PictureBox();
             grprun.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblA
@@ -134,12 +137,11 @@ namespace GUI
             txtHint.Size = new Size(376, 25);
             txtHint.TabIndex = 9;
             txtHint.Text = "Weight threshold: 30, Volume threshold: 800";
-            txtHint.Visible = false;
             // 
             // txtresult
             // 
             txtresult.Enabled = false;
-            txtresult.Location = new Point(6, 116);
+            txtresult.Location = new Point(6, 102);
             txtresult.Multiline = true;
             txtresult.Name = "txtresult";
             txtresult.Size = new Size(376, 85);
@@ -295,11 +297,22 @@ namespace GUI
             label5.TabIndex = 22;
             label5.Text = "Volume";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(563, 111);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(482, 420);
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
+            pictureBox1.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(892, 645);
+            ClientSize = new Size(1089, 645);
+            Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(txtvolumeF);
             Controls.Add(txtvolumeE);
@@ -328,6 +341,7 @@ namespace GUI
             grprun.ResumeLayout(false);
             grprun.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -385,5 +399,6 @@ namespace GUI
         private TextBox txtvolumeF;
         private Label label5;
         private TextBox txtHint;
+        private PictureBox pictureBox1;
     }
 }
