@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Google", "Integration.Google\Integration.Google.csproj", "{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.TomTom", "Integration.TomTom\Integration.TomTom.csproj", "{BCD882E8-08BB-47AD-833B-7B4B8D245975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonModels", "CommonModels\CommonModels.csproj", "{6B1F5D26-8FF5-4831-98E8-52C8D08512BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F55E38D-F70C-488E-98C9-FB28D70F8AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD882E8-08BB-47AD-833B-7B4B8D245975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD882E8-08BB-47AD-833B-7B4B8D245975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD882E8-08BB-47AD-833B-7B4B8D245975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD882E8-08BB-47AD-833B-7B4B8D245975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1F5D26-8FF5-4831-98E8-52C8D08512BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1F5D26-8FF5-4831-98E8-52C8D08512BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1F5D26-8FF5-4831-98E8-52C8D08512BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1F5D26-8FF5-4831-98E8-52C8D08512BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
+using CommonModels;
 using Domain.Input;
-using Integration.Google;
 
 namespace Domain
 {
@@ -11,7 +11,7 @@ namespace Domain
         public List<Bin> BinList { get; set; } = new();
 
         private List<Bin> _binListToPickUP;
-        private GoogleCLient _googleCLient = new();
+        private DirectionsSolver _directionSolver = new();
 
         public BinCollection()
         {
@@ -66,7 +66,7 @@ namespace Domain
             {
                 points.Add(bin.ToPointOnMap());
             }
-            return await _googleCLient.GetDirectionsAsync(points);
+            return await _directionSolver.GetDirectionsAsync(points);
         }
     }
 }

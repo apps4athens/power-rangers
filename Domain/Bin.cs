@@ -1,4 +1,4 @@
-﻿using Integration.Google;
+﻿using CommonModels;
 
 namespace Domain
 {

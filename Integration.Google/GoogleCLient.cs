@@ -1,12 +1,13 @@
 ﻿using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
+using CommonModels;
 
 namespace Integration.Google
 {
     //https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=YOUR_API_KEY
 
-    public class GoogleCLient
+    public class GoogleClient
     {
         private string APIKEY = "12jodhncpwy84cfa8";
         private HttpClient _client = new()

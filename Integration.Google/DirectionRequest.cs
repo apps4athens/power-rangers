@@ -1,4 +1,6 @@
-﻿namespace Integration.Google
+﻿using CommonModels;
+
+namespace Integration.Google
 {
     //    {
     //    "origin": "49.794150,-84.564514",

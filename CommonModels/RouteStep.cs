@@ -1,4 +1,4 @@
-﻿namespace Integration.Google
+﻿namespace CommonModels
 {
     public class RouteStep
     {

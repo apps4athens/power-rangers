@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Integration.Google\Integration.Google.csproj" />
+    <ProjectReference Include="..\Integration.TomTom\Integration.TomTom.csproj" />
   </ItemGroup>
 
   <ItemGroup>
